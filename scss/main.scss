@@ -174,12 +174,38 @@ main {
   color: #333;
 }
 
+// Work / Projects
+.project-buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button-item {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+// Icons
+
+i {
+  margin-right: 5px;
+}
+
+//Project Demo Screenshots
+
+.project-demo img {
+  width: 100%;
+  padding: 5px;
 }
 
 @import "mobile";
