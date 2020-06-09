@@ -74,9 +74,16 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    "work-title work-title work-title"
+    "job1 job2 job3"
+    "edu-title edu-title edu-title"
+    "edu1 edu2 edu3"
+    "intl-title intl-title intl-title"
+    "intl1 intl2 intl3";
+
   grid-template-columns: repeat(3, 1fr);
 }
+
 .bio-image {
   grid-area: bioimage;
   margin: auto;
@@ -100,10 +107,69 @@ main {
   grid-area: job3;
 }
 
+.edu-1 {
+  grid-area: edu1;
+}
+
+.edu-2 {
+  grid-area: edu2;
+}
+.edu-3 {
+  grid-area: edu3;
+}
+
+.intl-1 {
+  grid-area: intl1;
+}
+
+.intl-2 {
+  grid-area: intl2;
+}
+.intl-3 {
+  grid-area: intl3;
+}
+
+.work-title {
+  grid-area: work-title;
+  font-size: 1.5rem;
+  color: $secondary-color;
+  margin: auto;
+}
+
+.edu-title {
+  grid-area: edu-title;
+  font-size: 1.5rem;
+  color: $secondary-color;
+  margin: auto;
+}
+
+.intl-title {
+  grid-area: intl-title;
+  font-size: 1.5rem;
+  color: $secondary-color;
+  margin: auto;
+}
+
 .job {
+  background: lighten($primary-color, 10);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+}
+
+.edu {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
+}
+
+.intl {
+  background: darken($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+}
+
+.edu-heading {
+  font-size: 1.5rem;
 }
 
 // Work / Projects

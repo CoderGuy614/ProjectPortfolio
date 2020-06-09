@@ -55,9 +55,18 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "work-title"
       "job1"
       "job2"
-      "job3";
+      "job3"
+      "edu-title"
+      "edu1"
+      "edu2"
+      "edu3"
+      "intl-title"
+      "intl1"
+      "intl2"
+      "intl3";
     grid-template-columns: 1fr;
   }
 }
