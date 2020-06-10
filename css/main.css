@@ -141,7 +141,8 @@ header {
   z-index: 2;
   width: 100%; }
 
-.text-secondary {
+.text-secondary,
+.fa-code {
   color: #45a29e; }
 
 main {
@@ -174,7 +175,7 @@ main {
 
 .bio {
   grid-area: bio;
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
 
 .job-1 {
   grid-area: job1; }
@@ -264,7 +265,6 @@ main {
     margin-bottom: 3rem;
     transition: all 0.75s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
       background: #45a29e;
       color: black; }
       .boxes div:hover span {
