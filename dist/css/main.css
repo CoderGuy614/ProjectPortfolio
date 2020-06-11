@@ -55,8 +55,9 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
-      background-position: -35px -60px;
+      background: url("../img/profile-pic.jpg");
+      background-size: cover;
+      background-position: -120px 0px;
       border-radius: 50%;
       border: solid 3px #45a29e;
       background-repeat: no-repeat; }
@@ -350,11 +351,13 @@ i {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
-      background-repeat: no-repeat;
-      background-position: -20px -30px;
+      background: url("../img/profile-pic.jpg");
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: -70px;
+      background-repeat: no-repeat; }
   .about-info {
     grid-template-areas: "bioimage" "bioimage2" "bio" "work-title" "job1" "job2" "job3" "edu-title" "edu1" "edu2" "edu3" "intl-title" "intl1" "intl2" "intl3";
     grid-template-columns: 1fr; } }

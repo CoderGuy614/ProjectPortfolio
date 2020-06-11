@@ -44,11 +44,13 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait_small.jpg");
-      background-repeat: no-repeat;
-      background-position: -20px -30px;
+      background: url("../img/profile-pic.jpg");
       width: 150px;
       height: 150px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: -70px;
+      background-repeat: no-repeat;
     }
   }
   .about-info {
