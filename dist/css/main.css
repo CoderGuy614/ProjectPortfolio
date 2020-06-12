@@ -152,14 +152,14 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(200, 207, 212, 0.5); }
+    background: rgba(136, 152, 164, 0.5); }
   h1.name-heading,
   h2.name-heading,
   h3.name-heading {
     margin-top: 4rem;
     font-size: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(200, 207, 212, 0.9); }
+    background: rgba(165, 177, 186, 0.9); }
 
 a {
   color: white;
