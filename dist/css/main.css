@@ -159,7 +159,7 @@ h3 {
     margin-top: 4rem;
     font-size: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(165, 177, 186, 0.9); }
+    background: rgba(194, 202, 208, 0.9); }
 
 a {
   color: white;
@@ -384,12 +384,11 @@ i {
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/profile-pic.jpg");
-      width: 150px;
-      height: 150px;
+      width: 125px;
+      height: 125px;
       border-radius: 50%;
       background-size: cover;
-      background-position: -70px;
-      background-repeat: no-repeat; }
+      background-position: -60px; }
   .about-info {
     grid-template-areas: "bioimage" "bioimage2" "bio" "work-title" "job1" "job2" "job3" "edu-title" "edu1" "edu2" "edu3" "intl-title" "intl1" "intl2" "intl3";
     grid-template-columns: 1fr; } }
