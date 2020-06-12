@@ -13,6 +13,11 @@
 }
 // Tablets and Small Laptops
 @include mediaMd {
+  .name-small {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
