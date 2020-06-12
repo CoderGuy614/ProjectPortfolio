@@ -4,6 +4,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuBranding = document.querySelector(".menu-branding");
 const menuNav = document.querySelector(".menu-nav");
+const menuHalfPage = document.querySelector(".menu-half-cover");
 const navItems = document.querySelectorAll(".nav-item");
 
 // Set Initial State of Menu
@@ -17,6 +18,7 @@ function toggleMenu() {
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
+    menuHalfPage.classList.add("show");
     navItems.forEach((item) => item.classList.add("show"));
     showMenu = true;
   } else {
@@ -24,6 +26,7 @@ function toggleMenu() {
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
+    menuHalfPage.classList.remove("show");
     navItems.forEach((item) => item.classList.remove("show"));
     showMenu = false;
   }
