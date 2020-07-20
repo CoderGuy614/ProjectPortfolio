@@ -16,14 +16,24 @@ body {
 }
 
 // Headings
-h1,
+h1 {
+  &.lg-heading {
+    font-size: 75px;
+    margin-top: 0em;
+    font-weight: 100;
+
+    &.margin-top {
+      margin-top: 2em;
+    }
+  }
+}
 h2,
 h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 200;
   &.lg-heading {
     font-size: 6rem;
-    margin-top: 12rem;
+    margin-top: 3rem;
   }
   &.sm-heading {
     margin-bottom: 2rem;
