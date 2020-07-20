@@ -138,23 +138,26 @@ body {
       background: rgba(194, 202, 208, 0.6);
       z-index: -1; }
 
-h1,
+h1.lg-heading {
+  font-size: 75px;
+  margin-top: 0em;
+  font-weight: 100; }
+  h1.lg-heading.margin-top {
+    margin-top: 2em; }
+
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
-  h1.lg-heading,
+  font-weight: 200; }
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem;
-    margin-top: 12rem; }
-  h1.sm-heading,
+    margin-top: 3rem; }
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(136, 152, 164, 0.5); }
-  h1.name-heading,
   h2.name-heading,
   h3.name-heading {
     margin-top: 4rem;
