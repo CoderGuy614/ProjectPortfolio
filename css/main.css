@@ -122,7 +122,7 @@ body {
   color: black;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -146,6 +146,12 @@ h1.lg-heading {
   h1.lg-heading.margin-top {
     margin-top: 2em; }
 
+h1.name-heading {
+  margin-top: 4rem;
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(194, 202, 208, 0.8); }
+
 h2,
 h3 {
   margin: 0;
@@ -159,12 +165,6 @@ h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(136, 152, 164, 0.5); }
-  h2.name-heading,
-  h3.name-heading {
-    margin-top: 4rem;
-    font-size: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(194, 202, 208, 0.9); }
 
 a {
   color: white;
@@ -184,14 +184,21 @@ main {
   height: 100%;
   min-height: calc(100vh-60px); }
   main .icons {
+    display: flex;
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #45a29e;
         transition: all 0.75s ease-out; }
-  main#home {
-    overflow: hidden; }
+
+.homepage-buttons {
+  display: flex;
+  flex-direction: row; }
+  .homepage-buttons a {
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center; }
 
 .about-info {
   display: grid;
@@ -315,7 +322,8 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background-color: #45a29e;
-    color: black; }
+    color: black;
+    transition: all 0.75s ease-out; }
 
 .btn-dark {
   background: #404b53;
@@ -324,6 +332,12 @@ main {
 .btn-light {
   background: white;
   color: #333; }
+
+.btn-action {
+  width: 50%;
+  font-size: 1.5em;
+  margin: 0px 10px;
+  text-align: center; }
 
 .project-buttons {
   display: grid;
