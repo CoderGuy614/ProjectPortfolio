@@ -138,19 +138,26 @@ body {
       background: rgba(194, 202, 208, 0.6);
       z-index: -1; }
 
-h1.lg-heading {
-  font-size: 75px;
-  margin-top: 0em;
-  margin-bottom: 20px;
-  font-weight: 100; }
-  h1.lg-heading.margin-top {
-    margin-top: 2em; }
+.name-block {
+  margin-top: 2em;
+  align-items: center;
+  display: flex; }
 
-h1.name-heading {
+.homepage-photo {
+  margin: 1.5em;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px; }
+
+h1.name-homepage {
+  font-size: 75px; }
+
+h1.name-menu {
   margin-top: 4rem;
   font-size: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(194, 202, 208, 0.8); }
+  background: rgba(194, 202, 208, 0.8);
+  border-radius: 10px; }
 
 h2,
 h3 {
@@ -159,12 +166,14 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    border-radius: 10px; }
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.75rem 1rem;
-    background: rgba(136, 152, 164, 0.5); }
+    background: rgba(136, 152, 164, 0.5);
+    border-radius: 10px; }
 
 a {
   color: white;
@@ -192,13 +201,25 @@ main {
         color: #45a29e;
         transition: all 0.75s ease-out; }
 
+.home-portrait {
+  width: 125px;
+  height: 125px;
+  background: url("../img/profile-pic.jpg");
+  background-size: cover;
+  background-position: -120px 0px;
+  border-radius: 50%;
+  border: solid 3px #45a29e;
+  background-repeat: no-repeat; }
+
 .homepage-buttons {
   display: flex;
   flex-direction: row; }
   .homepage-buttons a {
     margin-top: 2em;
+    padding: 15px;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    border-radius: 10px; }
 
 .about-info {
   display: grid;
@@ -319,7 +340,8 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  border-radius: 10px; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background-color: #45a29e;
     color: black;
@@ -358,7 +380,8 @@ main {
   margin-bottom: 0.3rem;
   background-color: #45a29e;
   color: black;
-  width: 150px; }
+  width: 150px;
+  border-radius: 10px; }
   .back-button:hover {
     opacity: 0.75; }
 
