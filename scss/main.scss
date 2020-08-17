@@ -11,7 +11,9 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
+
   line-height: 1.5;
 }
 
@@ -21,16 +23,22 @@ body {
   display: flex;
 }
 
-.homepage-photo {
-  margin: 1.5em;
+.homepage-photo-div {
+  width: 125px;
+  height: 125px;
+  background: url("../img/profile-pic.jpg");
+  background-size: cover;
+  background-position: -60px 0px;
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  border: solid 3px $secondary-color;
+  background-repeat: no-repeat;
+  margin: 15px;
 }
 
 // Headings
 
 h1 {
+  font-weight: 200;
   &.name-homepage {
     font-size: 75px;
   }
@@ -45,16 +53,18 @@ h1 {
 h2,
 h3 {
   margin: 0;
-  font-weight: 200;
   &.lg-heading {
     font-size: 6rem;
+    font-weight: 200;
     margin-top: 3rem;
     border-radius: 10px;
   }
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.75rem 1rem;
-    background: rgba(darken($primary-color, 20), 0.5);
+    background: white;
+    font-weight: 200;
+    // background: rgba(darken($primary-color, 20), 0.5);
     border-radius: 10px;
   }
 }
@@ -302,6 +312,9 @@ main {
   font-size: 1.5em;
   margin: 0px 10px;
   text-align: center;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Work / Projects
