@@ -202,50 +202,43 @@ main {
   grid-area: intl3;
 }
 
+.work-title,
+.edu-title,
+.intl-title {
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 10px;
+  color: $secondary-color;
+  background: white;
+  margin: auto;
+}
+
 .work-title {
   grid-area: work-title;
-  font-size: 1.5rem;
-  color: $secondary-color;
-  margin: auto;
 }
 
 .edu-title {
   grid-area: edu-title;
-  font-size: 1.5rem;
-  color: $secondary-color;
-  margin: auto;
 }
 
 .intl-title {
   grid-area: intl-title;
-  font-size: 1.5rem;
-  color: $secondary-color;
-  margin: auto;
 }
 
-.job {
+.job,
+.edu,
+.intl {
+  box-shadow: 2px 3px $secondary-color;
+  border-radius: 5px;
   background: lighten($primary-color, 10);
   padding: 0.5rem;
-  border-bottom: $secondary-color 5px solid;
 }
-
-.edu {
-  background: lighten($primary-color, 5);
-  padding: 0.5rem;
-  border-bottom: $secondary-color 5px solid;
-}
-
-.intl {
-  background: darken($primary-color, 5);
-  padding: 0.5rem;
-  border-bottom: $secondary-color 5px solid;
-}
-
 .edu-heading {
   font-size: 1.5rem;
 }
 
 // Work / Projects
+
 .projects {
   display: grid;
   grid-gap: 20px;
@@ -253,7 +246,7 @@ main {
 
   img {
     width: 100%;
-    border: 3px, solid white;
+    border-radius: 5px;
 
     &:hover {
       opacity: 0.5;
