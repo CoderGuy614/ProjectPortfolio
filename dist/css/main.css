@@ -180,7 +180,7 @@ h3 {
     padding: 0.75rem 1rem;
     background: white;
     font-weight: 200;
-    border-radius: 10px; }
+    border-radius: 12px; }
 
 a {
   color: white;
@@ -207,6 +207,11 @@ main {
       main .icons a:hover {
         color: #45a29e;
         transition: all 0.75s ease-out; }
+  main .tech-icons {
+    background: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    margin-top: 1em; }
 
 .home-portrait {
   width: 125px;
@@ -419,6 +424,15 @@ i {
     .tech-icons img.square-icon {
       max-width: 75px;
       height: auto; }
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap; }
+
+.row {
+  justify-content: center; }
+  .row img {
+    padding: 10px; }
 
 .project-demo img {
   width: 100%;

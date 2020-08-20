@@ -101,6 +101,12 @@ main {
       }
     }
   }
+  .tech-icons {
+    background: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    margin-top: 1em;
+  }
 }
 
 .home-portrait {
@@ -378,6 +384,19 @@ i {
       max-width: 75px;
       height: auto;
     }
+  }
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  justify-content: center;
+
+  img {
+    padding: 10px;
   }
 }
 
