@@ -121,8 +121,9 @@ main {
 }
 
 .homepage-buttons {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
 
   a {
     margin-top: 2em;
@@ -314,9 +315,8 @@ main {
 }
 
 .btn-action {
-  width: 50%;
   font-size: 1.5em;
-  margin: 0px 10px;
+  margin: 10px 0px;
   text-align: center;
   &:hover {
     text-decoration: none;
@@ -387,16 +387,23 @@ i {
   }
 }
 
-.tech-icons {
-  display: flex;
-  flex-wrap: wrap;
-}
+.tech-icons-home {
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0px;
+  .row1 {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .row2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 
-.row {
-  justify-content: center;
-
-  img {
-    padding: 10px;
+    img {
+      max-height: 75px;
+      padding: 15px;
+    }
   }
 }
 
