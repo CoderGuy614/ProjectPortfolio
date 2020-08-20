@@ -176,7 +176,7 @@ h3 {
     border-radius: 10px; }
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin: 1.5rem 0rem;
     padding: 0.75rem 1rem;
     background: white;
     font-weight: 200;
@@ -228,7 +228,7 @@ main {
   grid-column-gap: 10px;
   grid-template-columns: 1fr 1fr; }
   .homepage-buttons a {
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 15px;
     justify-content: center;
     align-items: center;
@@ -283,38 +283,32 @@ main {
 .intl-3 {
   grid-area: intl3; }
 
-.work-title {
-  grid-area: work-title;
+.work-title,
+.edu-title,
+.intl-title {
   font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 10px;
   color: #45a29e;
+  background: white;
   margin: auto; }
+
+.work-title {
+  grid-area: work-title; }
 
 .edu-title {
-  grid-area: edu-title;
-  font-size: 1.5rem;
-  color: #45a29e;
-  margin: auto; }
+  grid-area: edu-title; }
 
 .intl-title {
-  grid-area: intl-title;
-  font-size: 1.5rem;
-  color: #45a29e;
-  margin: auto; }
+  grid-area: intl-title; }
 
-.job {
-  background: #dfe3e6;
-  padding: 0.5rem;
-  border-bottom: #45a29e 5px solid; }
-
-.edu {
-  background: #d0d7db;
-  padding: 0.5rem;
-  border-bottom: #45a29e 5px solid; }
-
+.job,
+.edu,
 .intl {
-  background: #b4bdc5;
-  padding: 0.5rem;
-  border-bottom: #45a29e 5px solid; }
+  box-shadow: 2px 3px #45a29e;
+  border-radius: 5px;
+  background: #dfe3e6;
+  padding: 0.5rem; }
 
 .edu-heading {
   font-size: 1.5rem; }
@@ -325,7 +319,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px, solid white; }
+    border-radius: 5px; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #45a29e;
