@@ -176,7 +176,7 @@ h3 {
     border-radius: 10px; }
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin: 1.5rem 0rem;
     padding: 0.75rem 1rem;
     background: white;
     font-weight: 200;
@@ -228,7 +228,7 @@ main {
   grid-column-gap: 10px;
   grid-template-columns: 1fr 1fr; }
   .homepage-buttons a {
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 15px;
     justify-content: center;
     align-items: center;

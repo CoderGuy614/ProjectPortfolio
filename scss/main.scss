@@ -60,11 +60,10 @@ h3 {
     border-radius: 10px;
   }
   &.sm-heading {
-    margin-bottom: 2rem;
+    margin: 1.5rem 0rem;
     padding: 0.75rem 1rem;
     background: white;
     font-weight: 200;
-    // background: rgba(darken($primary-color, 20), 0.5);
     border-radius: 12px;
   }
 }
@@ -126,7 +125,7 @@ main {
   grid-template-columns: 1fr 1fr;
 
   a {
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 15px;
     justify-content: center;
     align-items: center;
