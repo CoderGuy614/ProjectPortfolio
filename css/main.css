@@ -180,7 +180,7 @@ h3 {
     padding: 0.75rem 1rem;
     background: white;
     font-weight: 200;
-    border-radius: 10px; }
+    border-radius: 12px; }
 
 a {
   color: white;
@@ -207,6 +207,11 @@ main {
       main .icons a:hover {
         color: #45a29e;
         transition: all 0.75s ease-out; }
+  main .tech-icons {
+    background: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    margin-top: 1em; }
 
 .home-portrait {
   width: 125px;
@@ -219,8 +224,9 @@ main {
   background-repeat: no-repeat; }
 
 .homepage-buttons {
-  display: flex;
-  flex-direction: row; }
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr; }
   .homepage-buttons a {
     margin-top: 2em;
     padding: 15px;
@@ -363,9 +369,8 @@ main {
   color: #333; }
 
 .btn-action {
-  width: 50%;
   font-size: 1.5em;
-  margin: 0px 10px;
+  margin: 10px 0px;
   text-align: center; }
   .btn-action:hover {
     text-decoration: none; }
@@ -419,6 +424,21 @@ i {
     .tech-icons img.square-icon {
       max-width: 75px;
       height: auto; }
+
+.tech-icons-home {
+  background: white;
+  border-radius: 12px;
+  margin: 20px 0px; }
+  .tech-icons-home .row1 {
+    padding-top: 15px;
+    text-align: center; }
+  .tech-icons-home .row2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .tech-icons-home .row2 img {
+      max-height: 75px;
+      padding: 15px; }
 
 .project-demo img {
   width: 100%;
