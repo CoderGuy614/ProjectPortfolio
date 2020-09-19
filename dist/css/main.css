@@ -154,6 +154,23 @@ body {
   background-repeat: no-repeat;
   margin: 15px; }
 
+.flex-container {
+  display: flex;
+  justify-content: center; }
+
+.carousel-container {
+  width: 85%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  border: 3px solid #45a29e; }
+
+.carousel-indicators .active {
+  background-color: #45a29e !important; }
+
+.dot {
+  border: 2px solid #45a29e !important; }
+
 h1 {
   font-weight: 200; }
   h1.name-homepage {

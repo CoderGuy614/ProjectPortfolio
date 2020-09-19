@@ -35,6 +35,25 @@ body {
   margin: 15px;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.carousel-container {
+  width: 85%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  border: 3px solid $secondary-color;
+}
+
+.carousel-indicators .active {
+  background-color: $secondary-color !important;
+}
+.dot {
+  border: 2px solid $secondary-color !important;
+}
+
 // Headings
 
 h1 {
