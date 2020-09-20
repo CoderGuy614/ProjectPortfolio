@@ -12,7 +12,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Mukta", sans-serif;
-  font-weight: 200;
+  font-weight: 200 !important;
 
   line-height: 1.5;
 }
@@ -40,7 +40,7 @@ body {
   justify-content: center;
 }
 .carousel-container {
-  width: 75%;
+  width: 90%;
   padding: 10px;
   border-radius: 5px;
   margin: 20px 0;
@@ -50,12 +50,27 @@ body {
     font-weight: 200;
   }
 }
+.carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
 
 .carousel-inner {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+}
+
+.carousel-indicators {
+  z-index: -9999 !important;
 }
 .carousel-indicators li {
-  bottom: -50px !important;
+  bottom: -75px !important;
   height: 10px !important;
   background-color: $secondary-color !important;
 
@@ -65,14 +80,17 @@ body {
 }
 
 .carousel-caption {
-  position: relative !important;
-  left: 0 !important;
-  top: 0 !important;
-  // background-color: lightgray !important;
+  background: $secondary-color;
+  opacity: 0%;
+  max-height: 120px;
+  &:hover {
+    opacity: 90%;
+    @include easeOut();
+  }
   h5,
   p {
-    font-weight: 200 !important;
-    color: black !important;
+    font-weight: 250 !important;
+    color: white !important;
   }
 }
 
@@ -138,9 +156,10 @@ main {
     display: flex;
     margin-top: 1rem;
     a {
+      color: $secondary-color !important;
       padding: 0.4rem;
       &:hover {
-        color: $secondary-color;
+        color: $primary-color !important;
         @include easeOut();
       }
     }
@@ -329,6 +348,11 @@ main {
   align-items: center;
   margin-top: 1rem;
 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
   div {
     font-size: 1.5rem;
     border: 2px solid gray;
@@ -356,29 +380,30 @@ main {
   border: 1px solid $secondary-color;
   margin: 10px 0;
   border-radius: 10px;
+  text-decoration: none !important;
   &:hover {
-    background-color: $secondary-color;
-    color: set-text-color($secondary-color);
     @include easeOut();
   }
 }
 
-.btn-dark {
+.btn-dark-custom {
   @extend .btn;
-  // background: lighten($secondary-color, 10);
-  text-decoration: none !important;
+  color: $primary-color;
   background: #333 !important;
   &:hover {
+    background-color: $primary-color;
+    color: white;
     opacity: 80%;
   }
 }
 
-.btn-light {
+.btn-light-custom {
   @extend .btn;
-  // background: lighten($primary-color, 50);
   background: lighten($secondary-color, 20) !important;
-  text-decoration: none !important;
+  color: black;
   &:hover {
+    background: $primary-color;
+    color: set-text-color($primary-color);
     opacity: 80%;
   }
 }
@@ -417,7 +442,8 @@ main {
   border-radius: 10px;
 
   a {
-    color: white;
+    color: white !important;
+    text-decoration: none !important;
   }
 
   &:hover {
