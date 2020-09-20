@@ -61,14 +61,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #b4bdc5;
+    background: #f2f2f2;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.75s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #c2cad0;
+    background: white;
     transition: all 0.75s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -117,12 +117,12 @@
   box-sizing: border-box; }
 
 body {
-  background: #c2cad0;
+  background: white;
   color: black;
   height: 100%;
   margin: 0;
   font-family: "Mukta", sans-serif;
-  font-weight: 200;
+  font-weight: 200 !important;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -135,7 +135,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(194, 202, 208, 0.6);
+      background: rgba(255, 255, 255, 0.6);
       z-index: -1; }
 
 .name-block {
@@ -154,6 +154,60 @@ body {
   background-repeat: no-repeat;
   margin: 15px; }
 
+.flex-container {
+  display: flex;
+  justify-content: center; }
+
+.carousel-container {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  border: 1px solid #45a29e; }
+  .carousel-container h4 {
+    font-weight: 200; }
+
+.carousel .carousel-item {
+  height: 400px; }
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 400px; }
+
+.carousel-inner {
+  margin-bottom: 70px; }
+
+.carousel-indicators {
+  z-index: -9999 !important; }
+
+.carousel-indicators li {
+  bottom: -75px !important;
+  height: 10px !important;
+  background-color: #45a29e !important; }
+  .carousel-indicators li.active {
+    background-color: darkgray !important; }
+
+.carousel-caption {
+  background: #45a29e;
+  opacity: 0%;
+  max-height: 120px; }
+  .carousel-caption:hover {
+    opacity: 90%;
+    transition: all 0.75s ease-out; }
+  .carousel-caption h5,
+  .carousel-caption p {
+    font-weight: 250 !important;
+    color: white !important; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='teal' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='teal' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+
 h1 {
   font-weight: 200; }
   h1.name-homepage {
@@ -162,7 +216,7 @@ h1 {
     margin-top: 4rem;
     font-size: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(194, 202, 208, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px; }
 
 h2,
@@ -180,11 +234,8 @@ h3 {
     padding: 0.75rem 1rem;
     background: white;
     font-weight: 200;
+    border: 1px solid #45a29e;
     border-radius: 12px; }
-
-a {
-  color: white;
-  text-decoration: none; }
 
 header {
   position: fixed;
@@ -203,9 +254,10 @@ main {
     display: flex;
     margin-top: 1rem; }
     main .icons a {
+      color: #45a29e !important;
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #45a29e;
+        color: white !important;
         transition: all 0.75s ease-out; }
   main .tech-icons {
     background: white;
@@ -307,11 +359,25 @@ main {
 .intl {
   box-shadow: 2px 3px #45a29e;
   border-radius: 5px;
-  background: #dfe3e6;
+  background: white;
   padding: 0.5rem; }
 
 .edu-heading {
   font-size: 1.5rem; }
+
+.featured-project {
+  width: 50%;
+  height: 550px; }
+  .featured-project img {
+    width: 100%;
+    border: 1px solid #45a29e;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px #45a29e; }
+    .featured-project img:hover {
+      opacity: 0.5;
+      border-color: #45a29e;
+      transition: all 0.75s ease-out; }
 
 .projects {
   display: grid;
@@ -319,7 +385,10 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border-radius: 5px; }
+    border: 1px solid #45a29e;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px #45a29e; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #45a29e;
@@ -331,9 +400,12 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
+  .boxes a {
+    text-decoration: none;
+    color: black; }
   .boxes div {
     font-size: 1.5rem;
-    border: 3px solid white;
+    border: 2px solid gray;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.75s ease-out; }
@@ -342,25 +414,34 @@ main {
       color: black; }
       .boxes div:hover span {
         color: black; }
+  .boxes i {
+    margin-right: 10px; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark-custom, .btn-light-custom {
   display: block;
   padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  border-radius: 10px; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background-color: #45a29e;
-    color: black;
+  border: 1px solid #45a29e;
+  margin: 10px 0;
+  border-radius: 10px;
+  text-decoration: none !important; }
+  .btn:hover, .btn-dark-custom:hover, .btn-light-custom:hover {
     transition: all 0.75s ease-out; }
 
-.btn-dark {
-  background: #404b53;
-  color: white; }
+.btn-dark-custom {
+  color: white;
+  background: #333 !important; }
+  .btn-dark-custom:hover {
+    background-color: white;
+    color: white;
+    opacity: 80%; }
 
-.btn-light {
-  background: white;
-  color: #333; }
+.btn-light-custom {
+  background: #83cac7 !important;
+  color: black; }
+  .btn-light-custom:hover {
+    background: white;
+    color: black;
+    opacity: 80%; }
 
 .btn-action {
   font-size: 1.5em;
@@ -387,16 +468,18 @@ main {
   border: 0;
   margin-bottom: 0.3rem;
   background-color: #45a29e;
-  color: black;
   width: 150px;
   border-radius: 10px; }
+  .back-button a {
+    color: white !important;
+    text-decoration: none !important; }
   .back-button:hover {
     opacity: 0.75; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #a5b1ba;
+  background: #e6e6e6;
   color: black;
   height: 60px; }
 
